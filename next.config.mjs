@@ -3,25 +3,28 @@ import withPWA from "next-pwa";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["encrypted-tbn0.gstatic.com", "eoxrihspempkfnxziwzd.supabase.co", "www.animal.go.kr"],
     remotePatterns: [
+      {
+        hostname: "encrypted-tbn0.gstatic.com",
+        protocol: "https"
+      },
       {
         hostname: "eoxrihspempkfnxziwzd.supabase.co",
         protocol: "https"
+      },
+      {
+        hostname: "www.animal.go.kr",
+        protocol: "http"
       }
     ],
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/webp', 'image/avif'],
   },
   compress: true,        // HTTP 응답 압축 활성화
   poweredByHeader: false,  // X-Powered-By 헤더 제거
   productionBrowserSourceMaps: false,  // 프로덕션 소스맵 비활성화
   // 큰 패키지 최적화
   optimizePackageImports: [
-    '@mui/icons-material',
-    '@mui/material',
     'date-fns',
-    '@heroicons/react',
-    'lodash',
     'react-icons',
     '@nextui-org/react'
   ],

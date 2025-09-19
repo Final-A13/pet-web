@@ -97,7 +97,8 @@ const LoginForm = () => {
               <p className="p-[0.5rem]">회원가입</p>
             </button>
           </form>
-          <div className="mt-4 flex w-full items-center justify-between">
+          {/* 소셜 로그인 임시 비활성화 */}
+          {/* <div className="mt-4 flex w-full items-center justify-between">
             <div className="h-[1px] w-full border"></div>
             <p className="whitespace-nowrap px-[0.75rem] py-[0.5rem] text-[0.8125rem] text-[#999]">또는</p>
             <div className="h-[1px] w-full border"></div>
@@ -117,7 +118,7 @@ const LoginForm = () => {
               <FcGoogle className="mr-2 h-[24px] w-[24px]" />
               <p className="text-[0.9375rem] font-medium text-[#697481]">Google 로그인</p>
             </button>
-          </div>
+          </div> */}
           {error && <p style={{ color: "red" }}>(error)</p>}
         </div>
       </div>

@@ -84,5 +84,3 @@
 ![image (10)](https://github.com/user-attachments/assets/a8f8ad87-4a0d-49ab-8b98-0d6fbf5e9397)
 
 
-## 🔗 링크
-www.petcoco.kr
